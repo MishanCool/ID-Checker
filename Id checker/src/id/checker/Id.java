@@ -37,6 +37,9 @@ public class Id extends javax.swing.JFrame {
         txt_birthMonth = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txt_Gender = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txt_Date = new javax.swing.JTextField();
+        txt_Error = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,41 +60,48 @@ public class Id extends javax.swing.JFrame {
 
         jLabel4.setText("Gender");
 
+        jLabel5.setText("Date");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(Enter, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(52, 52, 52)))
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(txt_birthMonth, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txt_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(Enter, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(52, 52, 52))))
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel4)
+                                .addGap(61, 61, 61))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(51, 51, 51)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(txt_birthMonth, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(txt_Gender, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(48, 48, 48))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addGap(61, 61, 61))))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(txt_birthYear, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(txt_Date, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                                .addComponent(txt_Gender, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(48, 48, 48))))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txt_Error)
+                    .addComponent(txt_birthYear, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -107,13 +117,16 @@ public class Id extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_birthYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_birthMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(48, 48, 48))
+                    .addComponent(txt_Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_Date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(txt_Error, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -139,63 +152,209 @@ public class Id extends javax.swing.JFrame {
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         long id = Long.parseLong(txt_ID.getText());
         String s =String.valueOf(id);
-        String Year = s.substring(0,2);
-//        System.out.println(s);
-//        System.out.println(Year);
-        String Month = s.substring(2,5);
+        int length = s.length();
         
-        txt_birthYear.setText(Year);
+        if(length == 9) {
+            
+            String Year = s.substring(0,2);
+//          System.out.println(s);
+//          System.out.println(Year);
+            String Month = s.substring(2,5);
+        
+            txt_birthYear.setText("19"+Year);
         
         
-        String gender_num = s.substring(2,3);
-        int Gender = Integer.parseInt(gender_num.trim());
+            String gender_num = s.substring(2,3);
+            int Gender = Integer.parseInt(gender_num.trim());
+            int i = 0;
+            if(1<=Gender && Gender<=3) {
+                txt_Gender.setText("Male");
+                i = Integer.parseInt(Month.trim());
+            }
+            else if(5<=Gender && Gender<=8) {
+                txt_Gender.setText("Female");
+                i = Integer.parseInt(Month.trim());
+                i = i-500;
+            }
+    
+//            System.out.println(gender_num);
+            String Date = "";
+
+            if(i<=31) {
+                txt_birthMonth.setText("January");
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(31<i && i<=60) {
+                txt_birthMonth.setText("February");
+                i=i-31;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(60<i && i<=91) {
+                txt_birthMonth.setText("March");
+                i=i-60;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(91<i && i<=121) {
+                txt_birthMonth.setText("April");
+                i=i-91;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(121<i && i<=152) {
+                txt_birthMonth.setText("May");
+                i=i-121;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(152<i && i<=182) {
+                txt_birthMonth.setText("June");
+                i=i-152;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(182<i && i<=213) {
+                txt_birthMonth.setText("July");
+                i=i-182;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(213<i && i<=244) {
+                txt_birthMonth.setText("Auguest");
+                i=i-213;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(244<i && i<=274) {
+                txt_birthMonth.setText("September");
+                i=i-244;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(274<i && i<=305) {
+                txt_birthMonth.setText("Octomber");
+                i=i-274;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(305<i && i<=335) {
+                txt_birthMonth.setText("November");
+                i=i-305;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(335<i && i<=366) {
+                txt_birthMonth.setText("December");
+                i=i-335;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }   
+        }
         
-        if(1<=Gender && Gender<=3) {
-            txt_Gender.setText("Male");
-        }
-        else if(5<=Gender && Gender<=8) {
-            txt_Gender.setText("Female");
+        else if(length == 12){
+            String Year = s.substring(0,4);
+//          System.out.println(s);
+//          System.out.println(Year);
+            String Month = s.substring(4,7);
+        
+            txt_birthYear.setText(Year);
+        
+        
+            String gender_num = s.substring(4,5);
+            int Gender = Integer.parseInt(gender_num.trim());
+            int i = 0;
+            if(1<=Gender && Gender<=3) {
+                txt_Gender.setText("Male");
+                i = Integer.parseInt(Month.trim());
+            }
+            else if(5<=Gender && Gender<=8) {
+                txt_Gender.setText("Female");
+                i = Integer.parseInt(Month.trim());
+                i = i-500;
+            }
+    
+//            System.out.println(gender_num);
+            String Date = "";
+
+            if(i<=31) {
+                txt_birthMonth.setText("January");
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(31<i && i<=60) {
+                txt_birthMonth.setText("February");
+                i=i-31;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(60<i && i<=91) {
+                txt_birthMonth.setText("March");
+                i=i-60;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(91<i && i<=121) {
+                txt_birthMonth.setText("April");
+                i=i-91;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(121<i && i<=152) {
+                txt_birthMonth.setText("May");
+                i=i-121;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(152<i && i<=182) {
+                txt_birthMonth.setText("June");
+                i=i-152;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(182<i && i<=213) {
+                txt_birthMonth.setText("July");
+                i=i-182;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(213<i && i<=244) {
+                txt_birthMonth.setText("Auguest");
+                i=i-213;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(244<i && i<=274) {
+                txt_birthMonth.setText("September");
+                i=i-244;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(274<i && i<=305) {
+                txt_birthMonth.setText("Octomber");
+                i=i-274;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(305<i && i<=335) {
+                txt_birthMonth.setText("November");
+                i=i-305;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
+            else if(335<i && i<=366) {
+                txt_birthMonth.setText("December");
+                i=i-335;
+                Date = Integer.toString(i);
+                txt_Date.setText(Date);
+            }
         }
         
-        int i = Integer.parseInt(Month.trim());
-        System.out.println(gender_num);
-        
-        if(i<=31) {
-            txt_birthMonth.setText("January");
+        else{
+            txt_Error.setText("Invalied ID Number");
         }
-        else if(31<i && i<=60) {
-            txt_birthMonth.setText("February");
-        }
-        else if(60<i && i<=91) {
-            txt_birthMonth.setText("March");
-        }
-        else if(91<i && i<=121) {
-            txt_birthMonth.setText("April");
-        }
-        else if(121<i && i<=152) {
-            txt_birthMonth.setText("May");
-        }
-        else if(152<i && i<=182) {
-            txt_birthMonth.setText("June");
-        }
-        else if(182<i && i<=213) {
-            txt_birthMonth.setText("July");
-        }
-        else if(213<i && i<=244) {
-            txt_birthMonth.setText("Auguest");
-        }
-        else if(244<i && i<=274) {
-            txt_birthMonth.setText("September");
-        }
-        else if(274<i && i<=305) {
-            txt_birthMonth.setText("Octomber");
-        }
-        else if(305<i && i<=335) {
-            txt_birthMonth.setText("November");
-        }
-        else if(335<i && i<=366) {
-            txt_birthMonth.setText("December");
-        }
+       
        
     }//GEN-LAST:event_EnterActionPerformed
 
@@ -240,7 +399,10 @@ public class Id extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField txt_Date;
+    private javax.swing.JTextField txt_Error;
     private javax.swing.JTextField txt_Gender;
     private javax.swing.JTextField txt_ID;
     private javax.swing.JTextField txt_birthMonth;
